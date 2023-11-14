@@ -16,3 +16,18 @@ Passionate and dedicated junior frontend developer with a strong foundation in H
 
 JavaScript, HTML, CSS, Cypress, Selenium, Trello
 
+
+### Code
+
+```
+let hideBtn = document.createElement('input');
+    hideBtn.type = 'button';
+    hideBtn.value = 'Скрыть';
+    forecastWeather.append(hideBtn);
+
+    hideBtn.addEventListener('click', function() {
+    forecastWeather.innerHTML = '';
+    currentWeather.classList.remove('hidden')
+})
+```
+

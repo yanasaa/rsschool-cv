@@ -4,7 +4,7 @@
 
 ***
 ### Contacts
-* _e-mail:_ __yanasaa@hmail.com__ 
+* _e-mail:_ __yanasaa@gmail.com__ 
 * _discord:_ __yanasaa__ 
 
 ***
@@ -45,7 +45,7 @@ export default HeadAnimation;
 
 ***
 ### Experience and Education
-* __Курс "JavaScript/DOM/Интерфейсы"__
+* __Course "JavaScript/DOM/Interfaces"__
 _learn.javascript.ru_
 Courses in professional JavaScript and related technologies. With theory, practice and "code review"
 

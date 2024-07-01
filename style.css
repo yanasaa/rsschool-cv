@@ -8,29 +8,64 @@
    --text-color: rgb(39, 38, 38);
 }
 
+html {
+   scroll-behavior: smooth;
+}
 
 body {
    max-width: 1200px;
    margin: 0 auto;
+   padding: 0 50px;
    color: var(--text-color);
 }
+
 a {
    color: var(--text-color);
+   white-space: nowrap;
 }
+
 h1 {
    color: rgb(174, 109, 234);
 }
 
+header {
+   background-color: rgb(197, 103, 35);
+}
+
+.navigation {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 2vh;
+   list-style-type: none;
+}
+
+.navigation > li > a {
+   color: cornsilk;
+   padding: 2vh;
+   font-size: 1.5em;
+}
+
+main {
+   background-color: cornsilk;
+   height: 1200px;
+}
+
 footer {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
+   background-color: rgb(197, 103, 35);
+   padding: 2vh;
 }
+
 .footer__link {
    display: flex;
    align-items: center;
    gap: 10px;
    transition: all .3s ease;
 }
+
 .footer__link:hover {
    transform: scale(1.1);
 }

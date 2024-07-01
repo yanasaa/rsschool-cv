@@ -4,7 +4,33 @@
    text-decoration: none;
    box-sizing: border-box;
 }
+:root {
+   --text-color: rgb(39, 38, 38);
+}
 
+
+body {
+   max-width: 1200px;
+   margin: 0 auto;
+   color: var(--text-color);
+}
+a {
+   color: var(--text-color);
+}
 h1 {
    color: rgb(174, 109, 234);
+}
+
+footer {
+   display: flex;
+   justify-content: space-between;
+}
+.footer__link {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   transition: all .3s ease;
+}
+.footer__link:hover {
+   transform: scale(1.1);
 }

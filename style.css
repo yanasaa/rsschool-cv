@@ -171,6 +171,7 @@ main {
 }
 
 footer {
+   position: relative;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -187,4 +188,11 @@ footer {
 
 .footer__link:hover {
    transform: scale(1.1);
+}
+
+.signature {
+   position: absolute;
+   bottom: 1vh;
+   right: 2vh;
+   font-size: 0.7em;
 }

@@ -55,18 +55,49 @@
       <section class="skills" id="skills">
          <h3 class="section__title">Skills</h3>
          <div class="line"></div>
-         <div class="skills__container">
-            <div class="skill">React</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">TypeScript</div>
-            <div class="skill">Git</div>
-            <div class="skill">Tailwind</div>
-            <div class="skill">Ant Design</div>
-            <div class="skill">Redux Toolkit</div>
-            <div class="skill">English</div>
-            <div class="skill">Scrum</div>
+         <ul class="skills__container">
+            <li class="skill">React</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">TypeScript</li>
+            <li class="skill">Git</li>
+            <li class="skill">Tailwind</li>
+            <li class="skill">Ant Design</li>
+            <li class="skill">Redux Toolkit</li>
+            <li class="skill">English</li>
+            <li class="skill">Scrum</li>
+         </ul>
+      </section>
+      <section class="code" id="code">
+         <h3 class="section__title">Code Example</h3>
+         <div class="line"></div>
+         <div class="code__container">
+            <code>
+               <pre>
+               import { FC, useEffect } from "react";
+               import s from "./HeadAnimation.module.scss";
+
+               const HeadAnimation: FC = () => {
+                  const accentWords: string[] = ["best", "your", "fun", "new"];
+
+                  useEffect(() => {
+                     const accentBlock = document.querySelector(`${s.accent}`)
+                     const accentWords: NodeListOf<HTMLElement> = document.querySelectorAll(".anim")
+                  })
+
+                  return (
+                     &ltdiv className={s.animation}>
+                     &ltdiv className={`${s.accent}`}>
+                        {accentWords.map((word, i) => &ltp className={`${s[word]} anim`} key={i}>{word}&lt/p>)}
+                     &lt/div>
+                     &lt/div>
+                  );
+               }; 
+
+               export default HeadAnimation;
+               </pre>
+            </code>
          </div>
       </section>
    </main>

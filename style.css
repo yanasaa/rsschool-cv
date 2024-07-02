@@ -7,6 +7,7 @@
 :root {
    --text-color: #053c5e;
    --color-primary: #e69a3b;
+   --color-secondary: #d93524;
    --color-light: #f9f3dc;
 }
 
@@ -122,6 +123,23 @@ main {
    color: var(--color-light);
    background-color: var(--text-color);
    overflow-x: scroll;
+}
+
+.experience__container {
+   padding: 2vh 0;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2vw;
+}
+
+.experience__card_title {
+   color: var(--color-secondary);
+   margin-bottom: 1vh;
+}
+
+.experience__card_link {
+   font-weight: 600;
+   margin-bottom: 1vh;
 }
 
 footer {

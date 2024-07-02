@@ -73,8 +73,7 @@
          <h3 class="section__title">Code Example</h3>
          <div class="line"></div>
          <div class="code__container">
-            <code>
-               <pre>
+            <pre>
                import { FC, useEffect } from "react";
                import s from "./HeadAnimation.module.scss";
 
@@ -83,21 +82,20 @@
 
                   useEffect(() => {
                      const accentBlock = document.querySelector(`${s.accent}`)
-                     const accentWords: NodeListOf<HTMLElement> = document.querySelectorAll(".anim")
+                     const accentWords: NodeListOf &lt;HTMLElement&gt; = document.querySelectorAll(".anim")
                   })
 
                   return (
-                     &ltdiv className={s.animation}>
-                     &ltdiv className={`${s.accent}`}>
-                        {accentWords.map((word, i) => &ltp className={`${s[word]} anim`} key={i}>{word}&lt/p>)}
-                     &lt/div>
-                     &lt/div>
+                     &lt;div className={s.animation}&gt;
+                        &lt;div className={`${s.accent}`}&gt;
+                           {accentWords.map((word, i) => &lt;p className={`${s[word]} anim`} key={i}&gt;{word}&lt;/p&gt;)}
+                        &lt;/div&gt;
+                     &lt;/div&gt;
                   );
                }; 
 
                export default HeadAnimation;
-               </pre>
-            </code>
+            </pre>
          </div>
       </section>
       <section class="experience" id="experience">

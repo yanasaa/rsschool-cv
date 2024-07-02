@@ -61,6 +61,12 @@ main {
    padding: 2vh;
 }
 
+.section__title {
+   padding: 5vh 0 2vh;
+   text-align: center;
+   font-size: 1.5em;
+}
+
 .home {
    display: flex;
    gap: 5vw;
@@ -86,6 +92,28 @@ main {
 .intro {
    margin-top: 5vh;
    text-align: justify;
+}
+
+.skills__container {
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 2vh;
+   justify-content: center;
+   gap: 2vh;
+}
+
+.skill {
+   padding: 2vh;
+   white-space: nowrap;
+   font-weight: 600;
+   color: var(--color-light);
+   background: var(--color-primary);
+   border-radius: 20px;
+   transition: all .3s ease;
+}
+
+.skill:hover {
+   transform: scale(1.1);
 }
 
 footer {

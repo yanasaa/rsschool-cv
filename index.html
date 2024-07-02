@@ -8,6 +8,161 @@
    <title>CV RS School</title>
 </head>
 <body>
-   <h1>CV</h1>
+   <header>
+      <nav>
+         <ul class="navigation">
+            <li>
+               <a href="#home">Home</a>
+            </li>
+            <li>
+               <a href="#skills">Skills</a>
+            </li>
+            <li>
+               <a href="#code">Code Example</a>
+            </li>
+            <li>
+               <a href="#experience">Experience and Education</a>
+            </li>
+            <li>
+               <a href="#projects">Projects</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <section class="home" id="home">
+         <div class="home__info">
+            <div class="photo">
+               <img src="./images/photo.jpg" alt="Yana">
+            </div>
+         </div>
+         <div class="home__text">
+            <h1>Yana Matyushenko</h1>
+            <div class="line"></div>
+            <h2>Frontend developer</h2>
+            <p class="intro">
+               <span>Hello, </span> My name is Yana, and I am an aspiring frontend developer. Although my work experience is limited, I am well-acquainted with team collaboration. I have a passion for creating aesthetically pleasing and user-friendly interfaces. In my projects, I primarily use React (JavaScript).
+            </p>
+            <div class="contacts">
+               <h3>Contact me</h3>
+               <ul>
+                  <li>Email: <a href="mailto:yanasaa@gmail.com" target="_blank" rel="noopener noreferrer">yanasaa@gmail.com</a></li>
+                  <li>Discord: <a href="https://discord.com/channels/@me" target="_blank" rel="noopener noreferrer">yanasaa (@yanasaa)</a></li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <section class="skills" id="skills">
+         <h3 class="section__title">Skills</h3>
+         <div class="line"></div>
+         <ul class="skills__container">
+            <li class="skill">React</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">TypeScript</li>
+            <li class="skill">Git</li>
+            <li class="skill">Tailwind</li>
+            <li class="skill">Ant Design</li>
+            <li class="skill">Redux Toolkit</li>
+            <li class="skill">English B2</li>
+            <li class="skill">Scrum</li>
+         </ul>
+      </section>
+      <section class="code" id="code">
+         <h3 class="section__title">Code Example</h3>
+         <div class="line"></div>
+         <div class="code__container">
+            <pre>
+               import { FC, useEffect } from "react";
+               import s from "./HeadAnimation.module.scss";
+
+               const HeadAnimation: FC = () => {
+                  const accentWords: string[] = ["best", "your", "fun", "new"];
+
+                  useEffect(() => {
+                     const accentBlock = document.querySelector(`${s.accent}`)
+                     const accentWords: NodeListOf &lt;HTMLElement&gt; = document.querySelectorAll(".anim")
+                  })
+
+                  return (
+                     &lt;div className={s.animation}&gt;
+                        &lt;div className={`${s.accent}`}&gt;
+                           {accentWords.map((word, i) => &lt;p className={`${s[word]} anim`} key={i}&gt;{word}&lt;/p&gt;)}
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  );
+               }; 
+
+               export default HeadAnimation;
+            </pre>
+         </div>
+      </section>
+      <section class="experience" id="experience">
+         <h3 class="section__title">Experience and Education</h3>
+         <div class="line"></div>
+         <div class="experience__container">
+            <div class="experience__card">
+               <h4 class="experience__card_title">Course "JavaScript/DOM/Interfaces</h4>
+               <a class="experience__card_link" href="learn.javascript.ru" target="_blank" rel="noopener noreferrer">learn.javascript.ru</a>
+               <p>Courses in professional JavaScript and related technologies. With theory, practice and "code review"</p>
+            </div>
+            <div class="experience__card">
+               <h4 class="experience__card_title">Course QA Automation Engineer</h4>
+               <a class="experience__card_link" href="https://redrover.school/" target="_blank" rel="noopener noreferrer">Red Rover School</a>
+               <p>Courses in  theory of software testing, as well as automation using JavaScript and Cypress. There I supervised a group of students as part of a course on learning the basics of JavaScript</p>
+            </div>
+            <div class="experience__card">
+               <h4 class="experience__card_title">Front-End Developer</h4>
+               <a class="experience__card_link" href="https://exlab.team/" target="_blank" rel="noopener noreferrer">ExLab StartUp</a>
+               <p>Development of the frontend part of a platform for artisans from concept to MVP. Layout, logic, API, architecture. Reporting in YouTrack. Team collaboration following the Scrum methodology.</p>
+            </div>
+         </div>
+      </section>
+      <section class="projects" id="projects">
+         <h3 class="section__title">Projects</h3>
+         <div class="line"></div>
+         <div class="projects__container">
+            <div class="project">
+               <div class="project__img">
+                  <a href="https://github.com/vsmrnw/CraftShare" target="_blank" rel="noopener noreferrer" title="GitHub Link">
+                     <img src="https://yana-matyushenko.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcraftshare.a3365d54.png&w=1080&q=90" alt="CraftShare Homepage" >
+                  </a>
+               </div>
+               <div class="project__info">
+                  <h4 class="project__title">CraftShare</h4>
+                  <p class="project__desc">A website for artisans. Implemented functionality includes interaction with articles, user accounts, and other authors.</p>
+                  </div>
+            </div>
+            <div class="project">
+               <div class="project__img">
+                  <a href="https://codepen.io/Yana-Saa/pen/abXObLq" target="_blank" rel="noopener noreferrer" title="CodePen Link">
+                     <img src="https://yana-matyushenko.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fping.29f2a688.png&w=1200&q=90" alt="Ping-Pong Preview" >
+                  </a>
+               </div>
+               <div class="project__info">
+                  <h4 class="project__title">Ping-Pong</h4>
+                  <p class="project__desc">Implementation of the game "Ping-Pong" using JavaScript and the Canvas element to create a graphical interface..</p>
+                  </div>
+            </div>
+         </div>
+         <div class="line"></div>
+      </section>
+   </main>
+   <footer>
+      <a class="footer__link" href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noopener noreferrer">
+         <span class="course__logo">
+            <img src="./images/icons/rs_school.svg" alt="course logo" width="100" height="30">
+         </span>
+         JavaScript / Front-end Course
+      </a>
+      <a class="footer__link" href="https://github.com/yanasaa" target="_blank" rel="noopener noreferrer">
+         <span class="git__logo">
+            <img src="./images/icons/gitIcon.svg" alt="github icon" width="30" height="30">
+         </span>
+         My GitHub Account
+      </a>
+      <p class="signature">© Yana Matyushenko 2024</p>
+   </footer>
 </body>
 </html>

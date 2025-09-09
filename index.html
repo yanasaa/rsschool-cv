@@ -77,10 +77,10 @@
                import { FC, useEffect } from "react";
                import s from "./HeadAnimation.module.scss";
 
-               const HeadAnimation: FC = () => {
+               const HeadAnimation: FC = () =&gt; {
                   const accentWords: string[] = ["best", "your", "fun", "new"];
 
-                  useEffect(() => {
+                  useEffect(() =&gt; {
                      const accentBlock = document.querySelector(`${s.accent}`)
                      const accentWords: NodeListOf &lt;HTMLElement&gt; = document.querySelectorAll(".anim")
                   })
@@ -88,7 +88,7 @@
                   return (
                      &lt;div className={s.animation}&gt;
                         &lt;div className={`${s.accent}`}&gt;
-                           {accentWords.map((word, i) => &lt;p className={`${s[word]} anim`} key={i}&gt;{word}&lt;/p&gt;)}
+                           {accentWords.map((word, i) =&gt; &lt;p className={`${s[word]} anim`} key={i}&gt;{word}&lt;/p&gt;)}
                         &lt;/div&gt;
                      &lt;/div&gt;
                   );
